@@ -1,0 +1,95 @@
+:root {
+    --color-primary: #4B69FD;
+    --color-secondary: #FFF9EB;
+    --color-tertiary: #C4C4C4;
+    --color-button: #fe652b;
+    --color-button-hover: #e55720;
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Banner */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+}
+
+/* Input y botones */
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-section input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    border: 1px solid var(--color-tertiary);
+    border-radius: 5px;
+}
+
+.button-group button {
+    background-color: var(--color-button);
+    color: var(--color-white);
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-group button:hover {
+    background-color: var(--color-button-hover);
+}
+
+/* Botón reinicio */
+.reset-btn {
+    background-color: #ff4d4d;
+}
+
+.reset-btn:hover {
+    background-color: #e60000;
+}
+
+/* Mensajes */
+.input-section p {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* Resultados */
+.resultado-section {
+    margin-top: 20px;
+    background-color: var(--color-secondary);
+    padding: 15px;
+    border-radius: 8px;
+}
